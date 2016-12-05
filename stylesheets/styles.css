@@ -883,3 +883,9 @@ section #title .credits.right {
   font-size: 40px;
   color: #c8c800
 }
+
+.blueNumber {
+  font-family: 'SteelfishRegular' !important;
+  font-size: 40px;
+  color: #00c8c8
+}
