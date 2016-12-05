@@ -871,3 +871,9 @@ section #title .credits.right {
   font-size: 40px;
   color: #00af00
 }
+
+.pinkNumber {
+  font-family: 'SteelfishRegular' !important;
+  font-size: 40px;
+  color: #c80096
+}
