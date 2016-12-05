@@ -877,3 +877,9 @@ section #title .credits.right {
   font-size: 40px;
   color: #c80096
 }
+
+.yellowNumber {
+  font-family: 'SteelfishRegular' !important;
+  font-size: 40px;
+  color: #c8c800
+}
