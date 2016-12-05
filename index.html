@@ -4,30 +4,40 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="chrome=1">
     <title>OscaRobber by polakowo</title>
-
     <link rel="stylesheet" href="stylesheets/styles.css">
-    <link rel="stylesheet" href="stylesheets/github-light.css">
-    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" href="stylesheets/github-dark.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script src="javascripts/respond.js"></script>
     <!--[if lt IE 9]>
-    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
+    <!--[if lt IE 8]>
+    <link rel="stylesheet" href="stylesheets/ie.css">
+    <![endif]-->
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+
   </head>
   <body>
+      <div id="header">
+        <nav>
+          <li class="fork"><a href="https://github.com/polakowo/oscarobber">View On GitHub</a></li>
+          <li class="downloads"><a href="https://github.com/polakowo/oscarobber/zipball/master">ZIP</a></li>
+          <li class="downloads"><a href="https://github.com/polakowo/oscarobber/tarball/master">TAR</a></li>
+          <li class="title">DOWNLOADS</li>
+        </nav>
+      </div><!-- end header -->
+
     <div class="wrapper">
-      <header>
-        <h1>OscaRobber</h1>
-        <p>Analysis of data hosted on IMDB </p>
 
-        <p class="view"><a href="https://github.com/polakowo/oscarobber">View the Project on GitHub <small>polakowo/oscarobber</small></a></p>
-
-
-        <ul>
-          <li><a href="https://github.com/polakowo/oscarobber/zipball/master">Download <strong>ZIP File</strong></a></li>
-          <li><a href="https://github.com/polakowo/oscarobber/tarball/master">Download <strong>TAR Ball</strong></a></li>
-          <li><a href="https://github.com/polakowo/oscarobber">View On <strong>GitHub</strong></a></li>
-        </ul>
-      </header>
       <section>
+        <div id="title">
+          <h1>OscaRobber</h1>
+          <p>Analysis of data hosted on IMDB </p>
+          <hr>
+          <span class="credits left">Project maintained by <a href="https://github.com/polakowo">polakowo</a></span>
+          <span class="credits right">Hosted on GitHub Pages &mdash; Theme by <a href="https://twitter.com/michigangraham">mattgraham</a></span>
+        </div>
+
         <h2>
 <a id="goal" class="anchor" href="#goal" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Goal</h2>
 
@@ -257,13 +267,12 @@
 <p><em>Hint: Many collections having string values are encoded with integers to save some space, so we introduce collections ending by "_map" to get the initial strings values. Don't be scared if you see something like that, it's actually pretty awesome!</em></p>
 
 <p>Using filtering and intelligent mapping we were able to shrink the total size of IMDB data from 12GB to 1GB. You can download the complete MongoDB database by clicking "Download" button above.</p>
+
+<p><a href="https://postimg.org/image/p3w85jp9p/"><img src="https://s14.postimg.org/tpscdwasx/Screen_Shot_2016_12_05_at_20_55_04.png" alt="Screen Shot 2016-12-05 at 20.55.04.png"></a></p>
       </section>
-      <footer>
-        <p>This project is maintained by <a href="https://github.com/polakowo">polakowo</a></p>
-        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
-      </footer>
+
     </div>
-    <script src="javascripts/scale.fix.js"></script>
+    <!--[if !IE]><script>fixScale(document);</script><![endif]-->
     
   </body>
 </html>
