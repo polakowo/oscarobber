@@ -282,7 +282,7 @@
 				<p>In graph theory and network analysis, indicators of centrality identify the most important vertices within a graph</p>
 			</blockquote>
 			<p>We are going to explore the most central nodes according to a few different centrality definitions.</p>
-			<p><strong>Betweenness and closeness centrality</strong></p>
+			<h4>Betweenness and closeness centrality</h4>
 			<blockquote>
 				<p>Betweenness centrality quantifies the number of times a node acts as a bridge along the shortest path between two other nodes. Closeness centrality measures the mean distance from a node to other nodes.</p>
 			</blockquote>
@@ -292,13 +292,13 @@
 				<img alt="Transformers: Dark of the Moon (2011)" src="images/transformers.jpg">
 				<img alt="Captain America: Civil War (2016)" src="images/captainamerica.jpg">
 			</p>
-			<p><strong>Degree centrality</strong></p>
+			<h4>Degree centrality</h4>
 			<blockquote>
 				<p>Degree centrality is the most basic method of defining centrality, basing the centrality only on the number of neighbours a node has.</p>
 			</blockquote>
 			<ul><li>Actors who played in <strong>Kaze no tani no Naushika (1984)</strong> played also in <span class="Number">343</span> different movies, which is a record.</li></ul>
 			<p><img alt="Kaze no tani no Naushika (1984)" src="images/kaze.jpg"></p>
-			<p><strong>Eigenvector centrality</strong></p>
+			<h4>Eigenvector centrality</h4>
 			<blockquote>
 				<p>The eigenvector centrality thesis reads: A node is important if it is linked to by other important nodes.</p>
 			</blockquote>
@@ -325,7 +325,7 @@
 			<p>Assortative mixing is a preference for a network's nodes to attach to others that are similar in some way. The more is the coefficient of assortativity towards an attribute, the more the nodes prefer to attach to other nodes having a similar attribute value.</p>
 			</blockquote>
 			<p>By knowing assortativity we can closely approximate the behavior of the network.</p>
-			<p><strong>Below assortativity towards movie attributes.</strong></p>
+			<h4>Below assortativity towards movie attributes.</h4>
 			<table>
 				<thead>
 					<tr>
@@ -395,7 +395,7 @@
 				<li>Actors tend to act both in short and long movies.</li>
 				<li>Actors show no preference towards some particular production company or director.</li>
 			</ul>
-			<p><strong>Below assortativity towards actor attributes.</strong></p>
+			<h4>Below assortativity towards actor attributes.</h4>
 			<table>
 				<thead>
 					<tr>
@@ -439,7 +439,7 @@
 			<blockquote>
 				<p>Networks with high modularity have dense connections between the nodes within modules but sparse connections between nodes in different modules.</p>
 			</blockquote>
-			<p><strong>Below modularity of movie attributes.</strong></p>
+			<h4>Modularity of movie attributes.</h4>
 			<table>
 				<thead>
 					<tr>
@@ -498,7 +498,7 @@
 			</table>
 			<p><em>Hint: Numeric attributes like release year may have a very wide scale of values, which makes performance ugly. We discovered a correlation between maximal value on the scale and the performance: if some values go above ~1000, the algorithm hangs, hence some attributes have been rescaled to [1,10]. The modularity hasn't suffered.</em></p>
 			<ul><li>Production countries, release years, and languages are not good communities, that is for example, movies made within USA are interconnected only moderately, while they share many connections with movies made outside of USA. Film industry is an international industry.</li></ul>
-			<p><strong>Below modularity of actor attributes.</strong></p>
+			<h4>Modularity of actor attributes.</h4>
 			<table>
 				<thead>
 					<tr>
