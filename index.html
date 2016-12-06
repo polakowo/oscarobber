@@ -278,14 +278,45 @@
 					</tr>
 				</tbody>
 			</table>
+			<table>
+				<thead>
+					<tr>
+						<th>Min degree</th>
+						<th>Max degree</th>
+						<th>Median degree</th>
+						<th>Mean degree</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>1</td>
+						<td>448</td>
+						<td>1</td>
+						<td>2.4</td>
+					</tr>
+					<tr>
+						<td>0</td>
+						<td>448</td>
+						<td>0</td>
+						<td>1.2</td>
+					</tr>
+					<tr>
+						<td>0</td>
+						<td>48</td>
+						<td>1</td>
+						<td>1.2</td>
+					</tr>
+				</tbody>
+			</table>
+			<p>The sample of this network is shown as graph below.</p>
 			<p><img alt="Sample of bipartite network" src="images/Bip.png"></p>
+			<p><em>Hint: curious about graph design? Check out the code of <strong>NetworkHelper.draw_graph_attr</strong></em></p>
 			<h4>Movie network</h4>
 			<blockquote>
 				<p>Bipartite network projection is an extensively used method for compressing information about bipartite networks (<a href="https://en.wikipedia.org/wiki/Bipartite_network_projection">read here</a>). For the convenience of directly showing the relation structure among a particular set of nodes, bipartite networks are usually compressed by one-mode projection. This means that the ensuing network contains nodes of only either of the two sets, and two <strong>M</strong> (or, alternatively, <strong>A</strong>) nodes are connected only if when they have at least one common neighboring <strong>A</strong> (or, alternatively, <strong>M</strong>) node.</p>
 			</blockquote>
 			<p>The first projection is network of movies connected if they have an actor in common. The sample of this network is shown as graph below.</p>
 			<p><img alt="Sample of movie network" src="images/M.png"></p>
-			<p><em>Hint: curious about graph design? Check out the code of <strong>NetworkHelper.draw_graph_attr</strong></em></p>
 			<h4>Actor network</h4>
 			<p><img alt="Sample of actor network" src="images/A.png"></p>
 			<h3><a aria-hidden="true" class="anchor" href="#statistics" id="statistics"><span aria-hidden="true" class="octicon octicon-link"></span></a>Statistics</h3>
