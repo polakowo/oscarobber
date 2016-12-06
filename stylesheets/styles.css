@@ -861,6 +861,12 @@ section #title .credits.right {
   }
 }
 
+.Number {
+  font-family: 'SteelfishRegular' !important;
+  font-size: 28px;
+  color: #ffffff
+}
+
 .greenNumber {
   font-family: 'SteelfishRegular' !important;
   font-size: 40px;
