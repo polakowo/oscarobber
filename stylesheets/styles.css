@@ -865,27 +865,3 @@ section #title .credits.right {
   font-family: 'SteelfishRegular' !important;
   font-size: 28px;
 }
-
-.greenNumber {
-  font-family: 'SteelfishRegular' !important;
-  font-size: 28px;
-  color: #00af00
-}
-
-.pinkNumber {
-  font-family: 'SteelfishRegular' !important;
-  font-size: 28px;
-  color: #c80096
-}
-
-.yellowNumber {
-  font-family: 'SteelfishRegular' !important;
-  font-size: 28px;
-  color: #c8c800
-}
-
-.blueNumber {
-  font-family: 'SteelfishRegular' !important;
-  font-size: 28px;
-  color: #00c8c8
-}
