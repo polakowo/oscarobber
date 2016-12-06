@@ -366,8 +366,7 @@ img {
   /* 1 */
   -ms-interpolation-mode: bicubic;
   /* 2 */
-  max-height: 250px;
-  vertical-align: top;  
+  max-height: 250px; 
 }
 
 /*
