@@ -33,17 +33,21 @@
 				<hr>
 				<span class="credits left">Project maintained by <a href="https://github.com/polakowo">polakowo</a></span> <span class="credits right">Hosted on GitHub Pages</span>
 			</div>
+			
 			<h3><a aria-hidden="true" class="anchor" href="#goal" id="goal"><span aria-hidden="true" class="octicon octicon-link"></span></a>Goal</h3>
 			<blockquote>
 				<p>Explore IMDB dataset and user reviews to look behind the scenes of cinematography.</p>
 			</blockquote>
 			<p>This is a synergy project of <em>Computational Tools for Big Data</em> and <em>Social Graphs and Interactions</em>. We aim at combining knowledge from both courses to make a comprehensive analysis on co-stardom network of movies and actors (and draw some beautiful plots). We will use knowledge on network analysis and perform it highly efficiently using big data concepts learned in the Big Data course.</p>
 			<hr>
+			
 			<h2><a aria-hidden="true" class="anchor" href="#dataset" id="dataset"><span aria-hidden="true" class="octicon octicon-link"></span></a>Dataset</h2>
 			<h3><a aria-hidden="true" class="anchor" href="#imdb" id="imdb"><span aria-hidden="true" class="octicon octicon-link"></span></a>IMDB</h3>
 			<p>To help serve users who want local access to their data, the IMDB offers their data set as plain text files that can be downloaded for free. The IMDb data comes as plain data files having <code>.list</code> extension. The files have been downloaded from <a href="http://www.imdb.com/interfaces">http://www.imdb.com/interfaces</a> using an FTP client, and include compressed archives created by assembling collections of plain text files of <code>.list</code> format. The fetched data includes 52 archives and 4 folders. The size is estimated by <span class="Number">12.63GB</span>. The files downloaded have a format that is not easily readable by most computational tools learned in the course, therefore the data preparation played a major role in this project, and required a lot of effort. Since files from <a href="ftp://ftp.fu-berlin.de/pub/misc/movies/database/">ftp://ftp.fu-berlin.de/pub/misc/movies/database/</a> contain somewhat different numbers of columns and rows, and furthermore include different headers, the files had to be translated into a SQL database using a third-party service <a href="http://imdbpy.sourceforge.net">http://imdbpy.sourceforge.net</a>. But because SQL do not offers infrastructure required to easily access various attributes (and many other downsides, see Explainer Notebook), we have built an infrastructure to transfer the most important data to a NoSQL database. Properties of the resulting database are listed below.</p>
+			
 			<h3><a aria-hidden="true" class="anchor" href="#user-reviews" id="user-reviews"><span aria-hidden="true" class="octicon octicon-link"></span></a>User reviews</h3>
 			<p>For text analysis we used the <em>Large Movie Review Dataset v1.0</em> fetched from <a href="http://ai.stanford.edu/%7Eamaas/data/sentiment/">http://ai.stanford.edu/~amaas/data/sentiment/</a>. The core dataset contains <span class="Number">50,000</span> labeled, as well as unlabeled documents for unsupervised learning. In the entire collection, no more than 30 reviews are allowed for any given movie because reviews for the same movie tend to have correlated ratings. We used unlabeled data, as we are not interested in already provided sentiments, but want to calculate sentiments on ourselves. User reviews are keyed by IMDB ids rather than primary keys in the SQL database, hence we need to map each IMDB id to the corresponding primary key to be able to compare sentiments with other attributes like gross, release year, and more. As there is no information on IMDB ids in the database itself, we parsed OMDB website to find those.</p>
+			
 			<h3><a aria-hidden="true" class="anchor" href="#omdb" id="omdb"><span aria-hidden="true" class="octicon octicon-link"></span></a>OMDB</h3>
 			<p>The OMDb API is a free web service to obtain movie information. We have obtained <span class="Number">60,000</span> JSON documents from <a href="https://www.omdbapi.com">https://www.omdbapi.com</a>. Each JSON document contains following fields.</p>
 			<table>
@@ -64,6 +68,7 @@
 					</tr>
 				</tbody>
 			</table>
+			
 			<h3><a aria-hidden="true" class="anchor" href="#summary" id="summary"><span aria-hidden="true" class="octicon octicon-link"></span></a>Summary</h3>
 			<p>The final collections stored in MongoDB are listed below.</p>
 			<table>
@@ -242,6 +247,7 @@
 			</table>
 			<p><em>Hint: Many collections having string values are encoded with integers to save some space, so we introduce collections ending by "_map" to get the initial strings values. Don't be scared if you see something like that, it's actually pretty awesome!</em></p>
 			<p>Using filtering and intelligent mapping we were able to shrink the total size of IMDB data from 12GB to 1GB. You can download the complete MongoDB database by clicking "Download" button above.</p>
+			
 			<hr>
 			<h2><a aria-hidden="true" class="anchor" href="#network-analysis" id="network-analysis"><span aria-hidden="true" class="octicon octicon-link"></span></a>Network analysis</h2>
 			<h3>Statistics</h3>
@@ -264,6 +270,7 @@
 			<p>Degrees of co-stardom network follow the power law distribution, meaning the most common number of movies an actor plays is <span class="Number">1</span>, while the most common number of actors a movie hires is <span class="Number">2</span></p>
 			<p><iframe height="300px" width="100%" frameborder="0" scrolling="no" src="//plot.ly/~polakowo/1.embed?share_key=kpWfHA77vruWsAH1txeIpI"></iframe></p>
 			<p>Friendship paradox is true: the most actors know fewer actors than those know on average.</p>
+			
 			<h3>Centrality</h3>
 			<p>If you want to get friends with the most actors on Earth, first become friends with the cast of <strong>Iron Man Three (2013)</strong>, as it is the most central hub in the co-stardom network.</p>
 			<p><img alt="Iron Man Three (2013)" src="images/ironman3.jpg"></p>
@@ -271,6 +278,7 @@
 			<p><img alt="Kaze no tani no Naushika (1984)" src="images/kaze.jpg"></p>
 			<p>Actors who played in <strong>Kidô senshi Gandamu (1981)</strong> played also in very connected movies like <strong>Kaze no tani no Naushika (1984)</strong></p>
 			<p><img alt="Kidô senshi Gandamu (1981)" src="images/gundam.jpg"></p>
+			
 			<h3>Attributes</h3>
 			<p>The science fiction genre has experienced the main gain in popularity in the beginning of <span class="Number">2000th</span>, when the technology for movie production evolutionized, and it goes through the peak right now.</p>
 			<p><iframe height="300px" width="100%" frameborder="0" scrolling="no" src="//plot.ly/~polakowo/4.embed"></iframe></p>
@@ -284,6 +292,18 @@
 			<p><iframe height="300px" width="100%" frameborder="0" scrolling="no" src="//plot.ly/~polakowo/16.embed"></iframe></p>
 			<p>Height attribute, in contrast, follows the normal (Gaussian) distribution, and isn't correlated with any other attribute.</p>
 			<p><iframe height="300px" width="100%" frameborder="0" scrolling="no" src="//plot.ly/~polakowo/18.embed"></iframe></p>
+			
+			<h3>Assortativity</h3>
+			<p>Actors tend to play in movies which are released within a couple of years.</p>
+			<p>Actors act preferentially in movies where the same language is spoken.</p>
+			<p>Actors tend to act in movies produced in the same country.</p>
+			<p>The most profitable actors act in the most expensive movies. But before they got very popular, they act in low-budget movies first.</p>
+			<p>Actors tend to act both in short and long movies.</p>
+			<p>Actors show no preference towards some particular production company or director.</p>
+			<p>Actors of similar age tend to play in movies. This seems to be well reasoned: there are movies where teens play the central role, movies with young adults, and finally adults.</p>
+			<p>Actors who were born in same country tend to act together.</p>
+			<p>Well-known actors tend to act with other well-known actors.</p>
+			<p>Height hasn't any impact on decisions of companies to hire somebody or not.</p>
 		</section>
 	</div><!--[if !IE]><script>fixScale(document);</script><![endif]-->
 </body>
