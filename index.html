@@ -60,9 +60,9 @@
             <p>To help serve users who want local access to their data, the IMDB offers their data set as plain text files that can be downloaded for free. The IMDb data comes as plain data files having <code>.list</code> extension. The files have been downloaded
                 from <a href="http://www.imdb.com/interfaces">http://www.imdb.com/interfaces</a> using an FTP client, and include compressed archives created by assembling collections of plain text files of <code>.list</code> format. The fetched data
                 includes 52 archives and 4 folders. The size is estimated by 12.63 GB. The files downloaded have a format that is not easily readable by most computational tools learned in the course, therefore the data preparation played a major role
-                in this project, and required a lot of effort. Since files from <a href="ftp://ftp.fu-berlin.de/pub/misc/movies/database/">ftp://ftp.fu-berlin.de/pub/misc/movies/database/</a> contain somewhat different numbers of columns and rows, and furthermore include different headers, the files had to be translated
-                into a SQL database using a third-party service <a href="http://imdbpy.sourceforge.net">http://imdbpy.sourceforge.net</a>. But because SQL do not offers infrastructure required to easily access various attributes (and many other downsides,
-                see Explainer Notebook), we have built an infrastructure to transfer the most important data to a NoSQL database. Properties of the resulting database are listed below.</p>
+                in this project, and required a lot of effort. Since files from <a href="ftp://ftp.fu-berlin.de/pub/misc/movies/database/">ftp://ftp.fu-berlin.de/pub/misc/movies/database/</a> contain somewhat different numbers of columns and rows, and
+                furthermore include different headers, the files had to be translated into a SQL database using a third-party service <a href="http://imdbpy.sourceforge.net">http://imdbpy.sourceforge.net</a>. But because SQL do not offers infrastructure
+                required to easily access various attributes (and many other downsides, see Explainer Notebook), we have built an infrastructure to transfer the most important data to a NoSQL database. Properties of the resulting database are listed below.</p>
 
             <h3>
 <a id="user-reviews" class="anchor" href="#user-reviews" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>User reviews</h3>
@@ -113,165 +113,165 @@
                 <tbody>
                     <tr>
                         <td><code>names_map</code></td>
-                        <td align="right">2851082</td>
-                        <td align="right">172</td>
-                        <td align="right">80</td>
+                        <td>2851082</td>
+                        <td>172</td>
+                        <td>80</td>
                     </tr>
                     <tr>
                         <td><code>prod_countries</code></td>
-                        <td align="right">951419</td>
-                        <td align="right">44</td>
-                        <td align="right">18</td>
+                        <td>951419</td>
+                        <td>44</td>
+                        <td>18</td>
                     </tr>
                     <tr>
                         <td><code>release_years</code></td>
-                        <td align="right">933715</td>
-                        <td align="right">46</td>
-                        <td align="right">14</td>
+                        <td>933715</td>
+                        <td>46</td>
+                        <td>14</td>
                     </tr>
                     <tr>
                         <td><code>titles_map</code></td>
-                        <td align="right">933715</td>
-                        <td align="right">59</td>
-                        <td align="right">28</td>
+                        <td>933715</td>
+                        <td>59</td>
+                        <td>28</td>
                     </tr>
                     <tr>
                         <td><code>genres</code></td>
-                        <td align="right">886236</td>
-                        <td align="right">46</td>
-                        <td align="right">22</td>
+                        <td>886236</td>
+                        <td>46</td>
+                        <td>22</td>
                     </tr>
                     <tr>
                         <td><code>directors</code></td>
-                        <td align="right">853946</td>
-                        <td align="right">39</td>
-                        <td align="right">19</td>
+                        <td>853946</td>
+                        <td>39</td>
+                        <td>19</td>
                     </tr>
                     <tr>
                         <td><code>languages</code></td>
-                        <td align="right">848085</td>
-                        <td align="right">39</td>
-                        <td align="right">13</td>
+                        <td>848085</td>
+                        <td>39</td>
+                        <td>13</td>
                     </tr>
                     <tr>
                         <td><code>cast</code></td>
-                        <td align="right">725011</td>
-                        <td align="right">81</td>
-                        <td align="right">62</td>
+                        <td>725011</td>
+                        <td>81</td>
+                        <td>62</td>
                     </tr>
                     <tr>
                         <td><code>prod_companies</code></td>
-                        <td align="right">634875</td>
-                        <td align="right">30</td>
-                        <td align="right">14</td>
+                        <td>634875</td>
+                        <td>30</td>
+                        <td>14</td>
                     </tr>
                     <tr>
                         <td><code>runtimes</code></td>
-                        <td align="right">613963</td>
-                        <td align="right">30</td>
-                        <td align="right">14</td>
+                        <td>613963</td>
+                        <td>30</td>
+                        <td>14</td>
                     </tr>
                     <tr>
                         <td><code>votes</code></td>
-                        <td align="right">280444</td>
-                        <td align="right">12</td>
-                        <td align="right">6</td>
+                        <td>280444</td>
+                        <td>12</td>
+                        <td>6</td>
                     </tr>
                     <tr>
                         <td><code>imdb_ratings</code></td>
-                        <td align="right">280444</td>
-                        <td align="right">13</td>
-                        <td align="right">6</td>
+                        <td>280444</td>
+                        <td>13</td>
+                        <td>6</td>
                     </tr>
                     <tr>
                         <td><code>birth_years</code></td>
-                        <td align="right">278288</td>
-                        <td align="right">12</td>
-                        <td align="right">6</td>
+                        <td>278288</td>
+                        <td>12</td>
+                        <td>6</td>
                     </tr>
                     <tr>
                         <td><code>keywords</code></td>
-                        <td align="right">267438</td>
-                        <td align="right">138</td>
-                        <td align="right">129</td>
+                        <td>267438</td>
+                        <td>138</td>
+                        <td>129</td>
                     </tr>
                     <tr>
                         <td><code>birth_places</code></td>
-                        <td align="right">250989</td>
-                        <td align="right">11</td>
-                        <td align="right">4</td>
+                        <td>250989</td>
+                        <td>11</td>
+                        <td>4</td>
                     </tr>
                     <tr>
                         <td><code>prod_companies_map</code></td>
-                        <td align="right">222116</td>
-                        <td align="right">14</td>
-                        <td align="right">7</td>
+                        <td>222116</td>
+                        <td>14</td>
+                        <td>7</td>
                     </tr>
                     <tr>
                         <td><code>plots</code></td>
-                        <td align="right">218348</td>
-                        <td align="right">148</td>
-                        <td align="right">109</td>
+                        <td>218348</td>
+                        <td>148</td>
+                        <td>109</td>
                     </tr>
                     <tr>
                         <td><code>heights</code></td>
-                        <td align="right">149667</td>
-                        <td align="right">7</td>
-                        <td align="right">2</td>
+                        <td>149667</td>
+                        <td>7</td>
+                        <td>2</td>
                     </tr>
                     <tr>
                         <td><code>keywords_map</code></td>
-                        <td align="right">147421</td>
-                        <td align="right">9</td>
-                        <td align="right">5</td>
+                        <td>147421</td>
+                        <td>9</td>
+                        <td>5</td>
                     </tr>
                     <tr>
                         <td><code>budgets</code></td>
-                        <td align="right">101221</td>
-                        <td align="right">4</td>
-                        <td align="right">2</td>
+                        <td>101221</td>
+                        <td>4</td>
+                        <td>2</td>
                     </tr>
                     <tr>
                         <td><code>omdb_files</code></td>
-                        <td align="right">64176</td>
-                        <td align="right">57</td>
-                        <td align="right">25</td>
+                        <td>64176</td>
+                        <td>57</td>
+                        <td>25</td>
                     </tr>
                     <tr>
                         <td><code>gross</code></td>
-                        <td align="right">15568</td>
-                        <td align="right">0</td>
-                        <td align="right">0</td>
+                        <td>15568</td>
+                        <td>0</td>
+                        <td>0</td>
                     </tr>
                     <tr>
                         <td><code>user_reviews</code></td>
-                        <td align="right">7091</td>
-                        <td align="right">64</td>
-                        <td align="right">45</td>
+                        <td>7091</td>
+                        <td>64</td>
+                        <td>45</td>
                     </tr>
                     <tr>
                         <td><code>birth_places_map</code></td>
-                        <td align="right">385</td>
-                        <td align="right">0</td>
-                        <td align="right">0</td>
+                        <td>385</td>
+                        <td>0</td>
+                        <td>0</td>
                     </tr>
                     <tr>
                         <td><code>languages_map</code></td>
-                        <td align="right">342</td>
-                        <td align="right">0</td>
-                        <td align="right">0</td>
+                        <td>342</td>
+                        <td>0</td>
+                        <td>0</td>
                     </tr>
                     <tr>
                         <td><code>prod_countries_map</code></td>
-                        <td align="right">241</td>
-                        <td align="right">0</td>
-                        <td align="right">0</td>
+                        <td>241</td>
+                        <td>0</td>
+                        <td>0</td>
                     </tr>
                     <tr>
                         <td><code>genres_map</code></td>
-                        <td align="right">28</td>
-                        <td align="right">0</td>
-                        <td align="right">0</td>
+                        <td>28</td>
+                        <td>0</td>
+                        <td>0</td>
                     </tr>
                 </tbody>
             </table>
@@ -289,14 +289,14 @@
             <p>The biggest cast has movie <strong>Angry Video Game Nerd: The Movie (2014)</strong> with <span class="greenNumber">448</span> actors. Here, IMDB lists all the normally uncredited extras in the cast.</p>
 
             <img src="images/AVGN_Full.jpg" alt="Angry Video Game Nerd: The Movie (2014)">
-            
+
             <p>Actor <strong>Kōichi Yamadera (1961)</strong> played in <span class="pinkNumber">48</span> science fiction films.</p>
-            
+
             <img src="images/Yamadera.png" alt="Kōichi Yamadera (1961)">
 
             <p>An actor acts in only <span class="pinkNumber">1.2</span> movies on average, and vice versa.</p>
 
-            <p><span class="yellowNumber">82%</span> of movies and actors are connected, meaning if you get friends with an well-known actor, through a chain of actor-to-actor relationships you may become friends with <span class="yellowNumber">82%</span> of all actors on the planet.</p>
+            <p><span class="yellowNumber">82%</span> of movies and actors are connected, meaning if you get friends with an well-known actor, through a chain of actor-to-actor relationships you may become friends with <span class="yellowNumber">82%</span>                of all actors on the planet.</p>
 
             <p>Probability that a particular actor plays in a particular movie is <span class="yellowNumber">0.0014%</span></p>
 
@@ -307,7 +307,7 @@
             <p>An actor knows <span class="greenNumber">59</span> actors on average.</p>
 
             <p><strong>Stan Lee (1922)</strong> knows <span class="greenNumber">3,052</span> actors in total.</p>
-            
+
             <img src="images/stanlee.jpg" alt="Stan Lee (1922)">
 
             <p>A movie is connected through an actor to <span class="pinkNumber">18</span> movies on average.</p>
