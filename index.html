@@ -255,8 +255,14 @@
 			<blockquote>
 				<p>The collaboration graph of movies and actors is called co-stardom network. Bipartite graph <strong>Bip=(M,A,E)</strong> will have two node sets <strong>M - movies</strong>, <strong>A - actors</strong> and edges in <strong>E</strong> that only connect nodes from opposite sets. <strong>M</strong> is connected to <strong>A</strong> if <strong>A</strong> has played in <strong>M</strong>. Hence there are no direct <strong>M - M</strong> or <strong>A - A</strong> links.</p>
 			</blockquote>
+			<p><img alt="Sample of bipartite network" src="images/Bip.png"></p>
 			<h4>Movie network</h4>
+			<blockquote>
+				<p>Bipartite network projection is an extensively used method for compressing information about bipartite networks (<a href="https://en.wikipedia.org/wiki/Bipartite_network_projection">read here</a>). For the convenience of directly showing the relation structure among a particular set of nodes, bipartite networks are usually compressed by one-mode projection. This means that the ensuing network contains nodes of only either of the two sets, and two <strong>M</strong> (or, alternatively, <strong>A</strong>) nodes are connected only if when they have at least one common neighboring <strong>A</strong> (or, alternatively, <strong>M</strong>) node.</p>
+			</blockquote>
+			<p>The first projection is network of movies connected if they have an actor in common. The sample of this network is shown as graph below.</p>
 			<p><img alt="Sample of movie network" src="images/M.png"></p>
+			<p><em>Hint: curious about graph design? Check out the code of <strong>NetworkHelper.draw_graph_attr</strong></em></p>
 			<h4>Actor network</h4>
 			<p><img alt="Sample of actor network" src="images/A.png"></p>
 			<h3><a aria-hidden="true" class="anchor" href="#statistics" id="statistics"><span aria-hidden="true" class="octicon octicon-link"></span></a>Statistics</h3>
