@@ -277,51 +277,37 @@
             </table>
 
             <p><em>Hint: Many collections having string values are encoded with integers to save some space, so we introduce collections ending by "_map" to get the initial strings values. Don't be scared if you see something like that, it's actually pretty awesome!</em></p>
-
             <p>Using filtering and intelligent mapping we were able to shrink the total size of IMDB data from 12GB to 1GB. You can download the complete MongoDB database by clicking "Download" button above.</p>
-
             <h2><a id="network-analysis" class="anchor" href="#network-analysis" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Network analysis</h2>
-
-            <p>The main discoveries in this part of solution refer entirely to the <strong>science fiction</strong> genre. The statistics are based on data provided by IMDB. For details see the particular section in Explainer Notebook.</p>
-
-            <p><span class="greenNumber">172,650</span> actors played in <span class="pinkNumber">13,989</span> movies.</p>
-
-            <p>The biggest cast has movie <strong>Angry Video Game Nerd: The Movie (2014)</strong> with <span class="greenNumber">448</span> actors. Here, IMDB lists all the normally uncredited extras in the cast.</p>
-
-            <img src="images/AVGN_Full.jpg" alt="Angry Video Game Nerd: The Movie (2014)">
-
-            <p>Actor <strong>Kōichi Yamadera (1961)</strong> played in <span class="pinkNumber">48</span> science fiction films.</p>
-
-            <img src="images/Yamadera.png" alt="Kōichi Yamadera (1961)">
-
-            <p>An actor acts in only <span class="pinkNumber">1.2</span> movies on average, and vice versa.</p>
-
-            <p><span class="yellowNumber">82%</span> of movies and actors are connected, meaning if you get friends with an well-known actor, through a chain of actor-to-actor relationships you may become friends with <span class="yellowNumber">82%</span>                of all actors on the planet.</p>
-
-            <p>Probability that a particular actor plays in a particular movie is <span class="yellowNumber">0.0014%</span></p>
-
-            <p>Probability that an actor plays in two random movies is <span class="yellowNumber">0.13%</span></p>
-
-            <p>Probability that a movie hires two random actors is <span class="yellowNumber">0.034%</span></p>
-
-            <p>An actor knows <span class="greenNumber">59</span> actors on average.</p>
-
-            <p><strong>Stan Lee (1922)</strong> knows <span class="greenNumber">3,052</span> actors in total.</p>
-
-            <img src="images/stanlee.jpg" alt="Stan Lee (1922)">
-
-            <p>A movie is connected through an actor to <span class="pinkNumber">18</span> movies on average.</p>
-
-            <p>Two random actors (or movies) are reached in a maximum of <span class="blueNumber">14</span> steps.</p>
-
-            <p>Degrees of co-stardom network follow the power law distribution, meaning the most common number of movies an actor plays is <span class="greenNumber">1</span>, while the most common number of actors a movie hires is <span class="pinkNumber">2</span></p>
             
+            <h3>Statistics</h3>
+            <p>The main discoveries in this part of solution refer entirely to the <strong>science fiction</strong> genre. The statistics are based on data provided by IMDB. For details see the particular section in Explainer Notebook.</p>
+            <p><span class="greenNumber">172,650</span> actors played in <span class="pinkNumber">13,989</span> movies.</p>
+            <p>The biggest cast has movie <strong>Angry Video Game Nerd: The Movie (2014)</strong> with <span class="greenNumber">448</span> actors. Here, IMDB lists all the normally uncredited extras in the cast.</p>
+            <img src="images/AVGN_Full.jpg" alt="Angry Video Game Nerd: The Movie (2014)">
+            <p>Actor <strong>Kōichi Yamadera (1961)</strong> played in <span class="pinkNumber">48</span> science fiction films.</p>
+            <img src="images/Yamadera.png" alt="Kōichi Yamadera (1961)">
+            <p>An actor acts in only <span class="pinkNumber">1.2</span> movies on average, and vice versa.</p>
+            <p><span class="yellowNumber">82%</span> of movies and actors are connected, meaning if you get friends with an well-known actor, through a chain of actor-to-actor relationships you may become friends with <span class="yellowNumber">82%</span> of all actors on the planet.</p>
+            <p>Probability that a particular actor plays in a particular movie is <span class="yellowNumber">0.0014%</span></p>
+            <p>Probability that an actor plays in two random movies is <span class="yellowNumber">0.13%</span></p>
+            <p>Probability that a movie hires two random actors is <span class="yellowNumber">0.034%</span></p>
+            <p>An actor knows <span class="greenNumber">59</span> actors on average.</p>
+            <p><strong>Stan Lee (1922)</strong> knows <span class="greenNumber">3,052</span> actors in total.</p>
+            <img src="images/stanlee.jpg" alt="Stan Lee (1922)">
+            <p>A movie is connected through an actor to <span class="pinkNumber">18</span> movies on average.</p>
+            <p>Two random actors (or movies) are reached in a maximum of <span class="blueNumber">14</span> steps.</p>
+            <p>Degrees of co-stardom network follow the power law distribution, meaning the most common number of movies an actor plays is <span class="greenNumber">1</span>, while the most common number of actors a movie hires is <span class="pinkNumber">2</span></p>
             <div>
                 <a href="https://plot.ly/~polakowo/1/" target="_blank" title="" style="display: block; text-align: center;"><img src="https://plot.ly/~polakowo/1.png" alt="" style="max-width: 100%;width: 600px;max-height: 300px;height: 300px"  width="600px" height="300px" onerror="this.onerror=null;this.src='https://plot.ly/404.png';" /></a>
                 <script data-plotly="polakowo:1"  src="https://plot.ly/embed.js" async></script>
             </div>
-
             <p>Friendship paradox is true: the most actors know fewer actors than those know on average.</p>
+            
+            <h3>Centrality</h3>
+            <p>If you want to get friends with the most actors on Earth, first become friends with the cast of <strong>Iron Man Three (2013)</strong>, as it is the most central hub in the co-stardom network.</p>
+            <p>Actors who played in <strong>Kaze no tani no Naushika (1984)</strong> played also in 343 different movies, which is a record.</p>
+            <p>Actors who played in <strong>Kidô senshi Gandamu (1981)</strong> played also in very connected movies like <strong>Kaze no tani no Naushika (1984)</strong></p>
         </section>
 
     </div>
