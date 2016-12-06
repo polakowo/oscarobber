@@ -738,13 +738,13 @@ dt {
 }
 #header nav li a {
   color: white;
-  border: 1px solid #C19B00;
-  background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #C19B00), color-stop(100%, #B7B100);
-  background: -webkit-linear-gradient(#C19B00, #B7B100);
-  background: -moz-linear-gradient(#C19B00, #B7B100);
-  background: -o-linear-gradient(#C19B00, #B7B100);
-  background: -ms-linear-gradient(#C19B00, #B7B100);
-  background: linear-gradient(#C19B00, #B7B100);
+  border: 1px solid #c6ac13;
+  background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #c6ac13), color-stop(100%, #e2df0f));
+  background: -webkit-linear-gradient(#c6ac13, #e2df0f);
+  background: -moz-linear-gradient(#c6ac13, #e2df0f);
+  background: -o-linear-gradient(#c6ac13, #e2df0f);
+  background: -ms-linear-gradient(#c6ac13, #e2df0f);
+  background: linear-gradient(#c6ac13, #e2df0f);
   -moz-border-radius: 2px;
   -webkit-border-radius: 2px;
   -o-border-radius: 2px;
