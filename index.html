@@ -67,8 +67,8 @@
             <h3>
 <a id="user-reviews" class="anchor" href="#user-reviews" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>User reviews</h3>
 
-            <p>For text analysis we used the <em>Large Movie Review Dataset v1.0</em> fetched from <a href="http://ai.stanford.edu/%7Eamaas/data/sentiment/">http://ai.stanford.edu/~amaas/data/sentiment/</a>. The core dataset contains 50,000 labeled, as well
-                as <span class="Number">50,000</span> unlabeled documents for unsupervised learning. In the entire collection, no more than 30 reviews are allowed for any given movie because reviews for the same movie tend to have correlated ratings. We used unlabeled data, as we
+            <p>For text analysis we used the <em>Large Movie Review Dataset v1.0</em> fetched from <a href="http://ai.stanford.edu/%7Eamaas/data/sentiment/">http://ai.stanford.edu/~amaas/data/sentiment/</a>. The core dataset contains <span class="Number">50,000</span> labeled, as well
+                as unlabeled documents for unsupervised learning. In the entire collection, no more than 30 reviews are allowed for any given movie because reviews for the same movie tend to have correlated ratings. We used unlabeled data, as we
                 are not interested in already provided sentiments, but want to calculate sentiments on ourselves. User reviews are keyed by IMDB ids rather than primary keys in the SQL database, hence we need to map each IMDB id to the corresponding primary
                 key to be able to compare sentiments with other attributes like gross, release year, and more. As there is no information on IMDB ids in the database itself, we parsed OMDB website to find those.</p>
 
