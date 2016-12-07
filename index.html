@@ -685,6 +685,7 @@
 			
 			<h2><a aria-hidden="true" class="anchor" href="#text-analysis" id="text-analysis"><span aria-hidden="true" class="octicon octicon-link"></span></a>Text analysis</h2>
 			<p>Now we are going to dig a little deeper into contents of movies to answer whether there is a correlation between keywords provided by IMDB and plots, and whether actors tend to act in movies of the same contents.</p>
+			<p><strong>Important: As the same calculations are considered both for keywords and plot keywords, we display the analysis of keywords only. For further information see Explainer Notebook.</strong></p>
 			<h3><a aria-hidden="true" class="anchor" href="#keywords" id="keywords"><span aria-hidden="true" class="octicon octicon-link"></span></a>Keywords</h3>
 			<p>First of all we will discover keywords provided by IMDB.</p>
 			<h4>Most common</h4>
@@ -744,6 +745,10 @@
 			</table>
 			<p>The actors tend to play in movies described by similar keywords (moderately though).</p>
 			<p>There is no single attribute correlated with similarity. Willing to act in movies of similar content depends on a dicision of an actor rather than on a movie. This decision isn't depending upon year, nor it is depending upon gross, budget and other measures: it is an output of complex psychology of an actor.</p>
+			<h3><a aria-hidden="true" class="anchor" href="#keywords-vs-plots" id="keywords-vs-plots"><span aria-hidden="true" class="octicon octicon-link"></span></a>Keywords vs. plots</h3>
+			<p>We expect both keywords and plots to be somewhat correlated, as plots describe the same contents but in a different, more readable for humans, way. We use a scatterplot to plot similarity on keywords versus similarity on plot keywords below.</p>
+			<iframe height="300px" width="100%" frameborder="0" scrolling="no" src="https://plot.ly/~polakowo/22.embed"></iframe>
+			<p>Plots and keywords are weakly correlated.</p>
 		</section>
 	</div><!--[if !IE]><script>fixScale(document);</script><![endif]-->
 </body>
