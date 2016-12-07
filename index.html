@@ -749,7 +749,7 @@
 			<p>There is no single attribute correlated with similarity. Willing to act in movies of similar content depends on a dicision of an actor rather than on a movie. This decision isn't depending upon year, nor it is depending upon gross, budget and other measures: it is an output of complex psychology of an actor.</p>
 			<h3><a aria-hidden="true" class="anchor" href="#keywords-vs-plots" id="keywords-vs-plots"><span aria-hidden="true" class="octicon octicon-link"></span></a>Keywords vs. plots</h3>
 			<p>We expect both keywords and plots to be somewhat correlated, as plots describe the same contents but in a different, more readable for humans, way. We use a scatterplot to plot similarity on keywords versus similarity on plot keywords below.</p>
-			<iframe height="300px" width="100%" frameborder="0" scrolling="no" src="https://plot.ly/~polakowo/22.embed"></iframe>
+			<p><iframe height="300px" width="100%" frameborder="0" scrolling="no" src="https://plot.ly/~polakowo/22.embed"></iframe><p>
 			<p>Plots and keywords are weakly correlated.</p>
 			<h3><a aria-hidden="true" class="anchor" href="#user-reviews" id="user-reviews"><span aria-hidden="true" class="octicon octicon-link"></span></a>User reviews</h3>
 			<p>We will apply sentiment analysis to identify and extract subjective information in user reviews.</p>
@@ -757,10 +757,11 @@
 				<p>Sentiment analysis (also known as opinion mining) refers to the use of natural language processing, text analysis and computational linguistics to identify and extract subjective information in source materials.</p>
 			</blockquote>
 			<p>Sentiments of user reviews follow normal distribution.</p>
-			<iframe height="300px" width="100%" frameborder="0" scrolling="no" src="https://plot.ly/~polakowo/24.embed"></iframe>
+			<p><iframe height="300px" width="100%" frameborder="0" scrolling="no" src="https://plot.ly/~polakowo/24.embed"></iframe></p>
 			<p>Sentiment analysis produces many errors, e.g., the user review classified as the second most positive is in fact negative. This because the LabMT wordlist contains only labeled words, not compounds, so the algorithm cannot detect a negotiation or sarcasm.</p>
 			<p>We also cannot discover any correlation between sentiment and release year, runtime, budget, and gross. Good and bad films are made every year, and are not depending upon runtime, budget or gross. Reviews are always a matter of taste.</p>
 			<h4>Terms</h4>
+			<p>Below the most common terms in user reviews are displayed.</p>
 			<p><img alt="Most common terms in user reviews" src="images/kwdssentmc.png"></p>
 			<p>The most common keywords are movie, film, good, and time.</p>
 			<p>The most trigrams contain bigram ever seen; expressions like that indicate that the movie made a big impression on the viewer.</p>
