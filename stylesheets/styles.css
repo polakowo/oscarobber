@@ -740,14 +740,14 @@ dt {
 }
 #header nav li a {
   color: white;
-  border: 1px solid #ff2596;
-  background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #ff5db1), color-stop(100%, #ef007c));
-  background: -webkit-linear-gradient(#ff5db1, #ef007c);
-  background: -moz-linear-gradient(#ff5db1, #ef007c);
-  background: -o-linear-gradient(#ff5db1, #ef007c);
-  background: -ms-linear-gradient(#ff5db1, #ef007c);
-  background: linear-gradient(#ff5db1, #ef007c);
-  background-color: #ff5db1;
+  border: 1px solid 72021c;
+  background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #a90329), color-stop(100%, #6d0019));
+  background: -webkit-linear-gradient(#a90329, #6d0019);
+  background: -moz-linear-gradient(#a90329, #6d0019);
+  background: -o-linear-gradient(#a90329, #6d0019);
+  background: -ms-linear-gradient(#a90329, #6d0019);
+  background: linear-gradient(#a90329, #6d0019);
+  background-color: #a90329;
   -moz-border-radius: 2px;
   -webkit-border-radius: 2px;
   -o-border-radius: 2px;
@@ -766,14 +766,14 @@ dt {
   text-align: center;
 }
 #header nav li a:hover {
-  background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #ff2a98), color-stop(100%, #bc0062));
-  background: -webkit-linear-gradient(#ff2a98, #bc0062);
-  background: -moz-linear-gradient(#ff2a98, #bc0062);
-  background: -o-linear-gradient(#ff2a98, #bc0062);
-  background: -ms-linear-gradient(#ff2a98, #bc0062);
-  background: linear-gradient(#ff2a98, #bc0062);
-  background-color: #ff2a98;
-  border: 1px solid #f60080;
+  background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #77021d), color-stop(100%, #3a000d));
+  background: -webkit-linear-gradient(#77021d, #3a000d);
+  background: -moz-linear-gradient(#77021d, #3a000d);
+  background: -o-linear-gradient(#77021d, #3a000d);
+  background: -ms-linear-gradient(#77021d, #3a000d);
+  background: linear-gradient(#77021d, #3a000d);
+  background-color: #77021d;
+  border: 1px solid #450111;
   -moz-box-shadow: inset 0px 1px 1px rgba(0, 0, 0, 0.2), 0px 1px 0px rgba(0, 0, 0, 0);
   -webkit-box-shadow: inset 0px 1px 1px rgba(0, 0, 0, 0.2), 0px 1px 0px rgba(0, 0, 0, 0);
   -o-box-shadow: inset 0px 1px 1px rgba(0, 0, 0, 0.2), 0px 1px 0px rgba(0, 0, 0, 0);
