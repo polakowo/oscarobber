@@ -684,21 +684,41 @@
 			<p>Each coloured node (and edge) belong to community 0, and their colour depends upon degree. All grey-coloured nodes (and edges) belong to other communities. We can discover the almost perfect partition. We recognize it by the cardinality of links within nodes of the same community (strong boundaries of coloured sections) being higher than the cardinality of links to other communities.</p>
 			
 			<h2><a aria-hidden="true" class="anchor" href="#text-analysis" id="text-analysis"><span aria-hidden="true" class="octicon octicon-link"></span></a>Text analysis</h2>
+			<p>Now we are going to dig a little deeper into contents of movies to answer whether there is a correlation between keywords provided by IMDB and plots, and whether actors tend to act in movies of the same contents. The general idea is that actors play in movies that have related content.</p>
 			<h3><a aria-hidden="true" class="anchor" href="#keywords" id="keywords"><span aria-hidden="true" class="octicon octicon-link"></span></a>Keywords</h3>
+			<h4>The most common keywords</h4>
 			<p><img alt="The most common keywords" src="images/mckwds.png"></p>
 			<p>The most common term is <em>independent-film</em>, a feature film that is produced mostly or completely outside of the major film studio system.</p>
 			<p>Films based on a novel enjoy the popularity.</p>
 			<p><img alt="Most common keywords by genre" src="images/kwdsbygenre.png"></p>
 			<p>More general terms <em>murder</em>, <em>female-nudity</em>, <em>sex</em> and <em>death</em> describe what the most films are about: murders and sex.</p>
 			<p>Keywords provided by IMDB highly correlate with contents of entire genres. The most common words of science fiction are <em>alien</em>, <em>outer-space</em>, <em>monster</em>, and <em>robot</em>. Horror films can be mainly described by terms <em>murder</em>, <em>death</em>, and <em>blood</em>. Terms <em>murder</em> and <em>police</em> are on the top of crime genre. The term <em>murder</em> is also very frequent in dramas. War films commonly show <em>WWII</em> and <em>nazis</em>.</p>
+			<h4>Keywords in top 250</h4>
 			<p><img alt="Keywords of top 250" src="images/kwdstop250.png"></p>
 			<p>The most profitable movies are biased towards particular terms.</p>
 			<p><em>Explosion</em> is one of the most frequent words for the most expensive movies. The more a production company has money, the more it invests in special effects, and the more explosions it shows. Across top 250 films by gross the most promising are blockbusters. Box-office-hit keyword (describing a highly-grossing picture) is also the most common in top 250 films by budget. All those keywords are less common for movies with the highest IMDB ratings though, where the independent-film and mockumentary (parody) top the list.</p>
 			<p>The most successful and top-rated films seem to differ a lot, they even mirror opposite trends: almost none of the keyword <em>independent-film</em> are present in the keywords set of the most expensive and profitable movies. On the other side, none of the term <em>box-office-hit</em> are in top-rated films. The same observation we do wenn we look at word <em>love</em>. Quite a lot of top-rated movies are about love, but only a bunch of most successful films are (which are mainly blockbusters with breathtaking explosions), that is, the top-rated films interact with feelings of watchers and trigger sympathy.</p>
-			<p>There is no single attribute correlated with similarity. Willing to act in movies of similar content depends on a dicision of an actor rather than on a movie. This decision isn't depending upon year, nor it is depending upon gross, budget and other measures: it is an output of complex psychology of an actor.</p>
+			<h4>Similarity</h4>
 			<iframe height="300px" width="100%" frameborder="0" scrolling="no" src="https://plot.ly/~polakowo/20.embed"></iframe>
 			<p>The most movies - <span class="Number">73%</span> - aren't similar regarding keywords, meaning that keywords are maybe to concrete for a similarity measure. But, having seen those keywords anywhere, you will be able to identify the movie right away.</p>
+			<table>
+				<thead>
+					<tr>
+						<th>Assortativity</th>
+						<th>Attribute</th>
+						<th>Coefficient</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>Numeric</td>
+						<td>Average similarity</td>
+						<td>0.50</td>
+					</tr>
+				</tbody>
+			</table>
 			<p>The actors tend to play in movies described by similar keywords (moderately though).</p>
+			<p>There is no single attribute correlated with similarity. Willing to act in movies of similar content depends on a dicision of an actor rather than on a movie. This decision isn't depending upon year, nor it is depending upon gross, budget and other measures: it is an output of complex psychology of an actor.</p>
 		</section>
 	</div><!--[if !IE]><script>fixScale(document);</script><![endif]-->
 </body>
