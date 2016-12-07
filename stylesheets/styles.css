@@ -740,13 +740,14 @@ dt {
 }
 #header nav li a {
   color: white;
-  border: 1px solid #25729a;
-  background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #3093c7), color-stop(100%, #1c5a85));
-  background: -webkit-linear-gradient(#3093c7, #1c5a85);
-  background: -moz-linear-gradient(#3093c7, #1c5a85);
-  background: -o-linear-gradient(#3093c7, #1c5a85);
-  background: -ms-linear-gradient(#3093c7, #1c5a85);
-  background: linear-gradient(#3093c7, #1c5a85);
+  border: 1px solid #ff2596;
+  background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #ff5db1), color-stop(100%, #ef007c));
+  background: -webkit-linear-gradient(#ff5db1, #ef007c);
+  background: -moz-linear-gradient(#ff5db1, #ef007c);
+  background: -o-linear-gradient(#ff5db1, #ef007c);
+  background: -ms-linear-gradient(#ff5db1, #ef007c);
+  background: linear-gradient(#ff5db1, #ef007c);
+  background-color: #ff5db1;
   -moz-border-radius: 2px;
   -webkit-border-radius: 2px;
   -o-border-radius: 2px;
@@ -757,7 +758,6 @@ dt {
   -webkit-box-shadow: inset 0px 1px 0px rgba(255, 255, 255, 0.3), 0px 3px 7px rgba(0, 0, 0, 0.7);
   -o-box-shadow: inset 0px 1px 0px rgba(255, 255, 255, 0.3), 0px 3px 7px rgba(0, 0, 0, 0.7);
   box-shadow: inset 0px 1px 0px rgba(255, 255, 255, 0.3), 0px 3px 7px rgba(0, 0, 0, 0.7);
-  background-color: #3093c7;
   padding: 10px 12px;
   margin-top: 6px;
   line-height: 14px;
@@ -766,14 +766,14 @@ dt {
   text-align: center;
 }
 #header nav li a:hover {
-  background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #26759e), color-stop(100%, #133d5b));
-  background: -webkit-linear-gradient(#26759e, #133d5b);
-  background: -moz-linear-gradient(#26759e, #133d5b);
-  background: -o-linear-gradient(#26759e, #133d5b);
-  background: -ms-linear-gradient(#26759e, #133d5b);
-  background: linear-gradient(#26759e, #133d5b);
-  background-color: #26759e;
-  border: 1px solid #1c5675;
+  background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #ff2a98), color-stop(100%, #bc0062));
+  background: -webkit-linear-gradient(#ff2a98, #bc0062);
+  background: -moz-linear-gradient(#ff2a98, #bc0062);
+  background: -o-linear-gradient(#ff2a98, #bc0062);
+  background: -ms-linear-gradient(#ff2a98, #bc0062);
+  background: linear-gradient(#ff2a98, #bc0062);
+  background-color: #ff2a98;
+  border: 1px solid #f60080;
   -moz-box-shadow: inset 0px 1px 1px rgba(0, 0, 0, 0.2), 0px 1px 0px rgba(0, 0, 0, 0);
   -webkit-box-shadow: inset 0px 1px 1px rgba(0, 0, 0, 0.2), 0px 1px 0px rgba(0, 0, 0, 0);
   -o-box-shadow: inset 0px 1px 1px rgba(0, 0, 0, 0.2), 0px 1px 0px rgba(0, 0, 0, 0);
