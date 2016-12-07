@@ -244,9 +244,9 @@
 			<p><em>Hint: Many collections having string values are encoded with integers to save some space, so we introduce collections ending by "_map" to get the initial strings values. Don't be scared if you see something like that, it's actually pretty awesome!</em></p>
 			<p>Using filtering and intelligent mapping we were able to shrink the total size of IMDB data from <span class="Number">12GB</span> to <span class="Number">1GB</span></p>
 			<p>You can download the complete MongoDB database <a href="https://media.githubusercontent.com/media/polakowo/oscarobber/master/mongodb/mongo_imdb.zip">here</a>. Use command <code>mongod --dbpath data/db</code> to import data into MongoDB instance.</p>
-			
 			<hr>
 			<h2><a aria-hidden="true" class="anchor" href="#network-analysis" id="network-analysis"><span aria-hidden="true" class="octicon octicon-link"></span></a>Network analysis</h2>
+			<p>Now we will perform an analysis on the network of <strong>science fiction</strong> movies. We will derive the most important network properties, test assortativity towards various attributes and uncover hidden communities.</p>
 			<h3><a aria-hidden="true" class="anchor" href="#network-representation" id="network-representation"><span aria-hidden="true" class="octicon octicon-link"></span></a>Network representation</h3>
 			<blockquote>
 				<p>The collaboration graph of movies and actors is called co-stardom network. Bipartite graph <strong>Bip=(M,A,E)</strong> will have two node sets <strong>M - movies</strong>, <strong>A - actors</strong> and edges in <strong>E</strong> that only connect nodes from opposite sets. <strong>M</strong> is connected to <strong>A</strong> if <strong>A</strong> has played in <strong>M</strong>. Hence there are no direct <strong>M - M</strong> or <strong>A - A</strong> links.</p>
