@@ -740,13 +740,13 @@ dt {
 }
 #header nav li a {
   color: white;
-  border: 1px solid #780032;
-  background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #960032), color-stop(100%, #780032));
-  background: -webkit-linear-gradient(#960032, #780032);
-  background: -moz-linear-gradient(#960032, #780032);
-  background: -o-linear-gradient(#960032, #780032);
-  background: -ms-linear-gradient(#960032, #780032);
-  background: linear-gradient(#960032, #780032);
+  border: 1px solid #640032;
+  background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #960032), color-stop(100%, #640032));
+  background: -webkit-linear-gradient(#960032, #640032);
+  background: -moz-linear-gradient(#960032, #640032);
+  background: -o-linear-gradient(#960032, #640032);
+  background: -ms-linear-gradient(#960032, #640032);
+  background: linear-gradient(#960032, #640032);
   background-color: #960032;
   -moz-border-radius: 2px;
   -webkit-border-radius: 2px;
@@ -766,19 +766,20 @@ dt {
   text-align: center;
 }
 #header nav li a:hover {
-  background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #c80046), color-stop(100%, #aa0047));
-  background: -webkit-linear-gradient(#c80046, #aa0047);
-  background: -moz-linear-gradient(#c80046, #aa0047);
-  background: -o-linear-gradient(#c80046, #aa0047);
-  background: -ms-linear-gradient(#c80046, #aa0047);
-  background: linear-gradient(#c80046, #aa0047);
+  background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #c80046), color-stop(100%, #960046));
+  background: -webkit-linear-gradient(#c80046, #960046);
+  background: -moz-linear-gradient(#c80046, #960046);
+  background: -o-linear-gradient(#c80046, #960046);
+  background: -ms-linear-gradient(#c80046, #960046);
+  background: linear-gradient(#c80046, #960046);
   background-color: #c80046;
-  border: 1px solid #aa0047;
+  border: 1px solid #960046;
   -moz-box-shadow: inset 0px 1px 1px rgba(0, 0, 0, 0.2), 0px 1px 0px rgba(0, 0, 0, 0);
   -webkit-box-shadow: inset 0px 1px 1px rgba(0, 0, 0, 0.2), 0px 1px 0px rgba(0, 0, 0, 0);
   -o-box-shadow: inset 0px 1px 1px rgba(0, 0, 0, 0.2), 0px 1px 0px rgba(0, 0, 0, 0);
   box-shadow: inset 0px 1px 1px rgba(0, 0, 0, 0.2), 0px 1px 0px rgba(0, 0, 0, 0);
 }
+
 
 #header nav li.fork {
   float: left;
