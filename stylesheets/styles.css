@@ -746,13 +746,14 @@ dt {
   background: -o-linear-gradient(top, #3093c7, #1c5a85);
   background: linear-gradient(to bottom, #3093c7, #1c5a85);filter:progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr=#3093c7,endColorstr=#1c5a85);
   
-  border: 1px solid #3093c7;
+  border: 1px solid #1c5a85;
   -moz-border-radius: 20px;
   -webkit-border-radius: 20px;
   -o-border-radius: 20px;
   -ms-border-radius: 20px;
   -khtml-border-radius: 20px;
   border-radius: 20px;
+  color: #ffffff;
   
   -moz-box-shadow: inset 0px 1px 0px rgba(255, 255, 255, 0.3), 0px 3px 7px rgba(0, 0, 0, 0.7);
   -webkit-box-shadow: inset 0px 1px 0px rgba(255, 255, 255, 0.3), 0px 3px 7px rgba(0, 0, 0, 0.7);
