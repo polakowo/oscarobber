@@ -42,6 +42,32 @@
 			<p>The introduction video for our project can be seen here.</p>
 			<iframe src="https://player.vimeo.com/video/191715406" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 			<p><a href="https://vimeo.com/191715406">SocialGraphs2016</a> from <a href="https://vimeo.com/user21645077">polakowo</a> on <a href="https://vimeo.com">Vimeo</a>.</p>
+			<h2><a aria-hidden="true" class="anchor" href="#table-of-contents" id="table-of-contents"><span aria-hidden="true" class="octicon octicon-link"></span></a>Table of contents</h2>
+			<p>Next you will find table of contents. To jump to the section, click on the header.</p>
+			<ul class="level1">
+				<li>Dataset</li>
+					<ul class="level2">
+						<li>IMDB</li>
+						<li>User reviews</li>
+						<li>OMDB</li>
+						<li>Summary</li>
+			     		</ul>
+			    	<li>Network analysis</li>
+					<ul class="level2">
+						<li>Network representation</li>
+						<li>Statistics</li>
+						<li>Centrality</li>
+						<li>Assortativity</li>
+						<li>Communities</li>
+			     		</ul>
+			      	<li>Text analysis</li>
+					<ul class="level2">
+						<li>Keywords</li>
+						<li>Keywords vs. plots</li>
+						<li>User reviews</li>
+			     		</ul>
+				<li>Further information</li>
+			</ul>
 			<h2><a aria-hidden="true" class="anchor" href="#dataset" id="dataset"><span aria-hidden="true" class="octicon octicon-link"></span></a>Dataset</h2>
 			<h3><a aria-hidden="true" class="anchor" href="#imdb" id="imdb"><span aria-hidden="true" class="octicon octicon-link"></span></a>IMDB</h3>
 			<p>To help serve users who want local access to their data, the IMDB offers their data set as plain text files that can be downloaded for free. The IMDb data comes as plain data files having <code>.list</code> extension. The files have been downloaded from <a href="http://www.imdb.com/interfaces">http://www.imdb.com/interfaces</a> using an FTP client, and include compressed archives created by assembling collections of plain text files of <code>.list</code> format. The fetched data includes 52 archives and 4 folders. The size is estimated by <span class="Number">12.63GB</span>. The files downloaded have a format that is not easily readable by most computational tools learned in the course, therefore the data preparation played a major role in this project, and required a lot of effort. Since files from <a href="ftp://ftp.fu-berlin.de/pub/misc/movies/database/">ftp://ftp.fu-berlin.de/pub/misc/movies/database/</a> contain somewhat different numbers of columns and rows, and furthermore include different headers, the files had to be translated into a SQL database using a third-party service <a href="http://imdbpy.sourceforge.net">http://imdbpy.sourceforge.net</a>. But because SQL do not offers infrastructure required to easily access various attributes (and many other downsides, see <a href="http://nbviewer.jupyter.org/github/polakowo/oscarobber/blob/master/jupyter/Assignment-Home.ipynb">Explainer Notebook</a>), we have built an infrastructure to transfer the most important data to a NoSQL database. Properties of the resulting database are listed below.</p>
