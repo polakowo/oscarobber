@@ -5,6 +5,7 @@
   font-weight: normal;
   font-style: normal;
 }
+
 @font-face {
   font-family: 'OpenSansLightItalic';
   src: url("../fonts/OpenSans-LightItalic-webfont.eot");
@@ -12,6 +13,7 @@
   font-weight: normal;
   font-style: normal;
 }
+
 @font-face {
   font-family: 'OpenSansRegular';
   src: url("../fonts/OpenSans-Regular-webfont.eot");
@@ -20,6 +22,7 @@
   font-style: normal;
   -webkit-font-smoothing: antialiased;
 }
+
 @font-face {
   font-family: 'OpenSansItalic';
   src: url("../fonts/OpenSans-Italic-webfont.eot");
@@ -28,6 +31,7 @@
   font-style: normal;
   -webkit-font-smoothing: antialiased;
 }
+
 @font-face {
   font-family: 'OpenSansSemibold';
   src: url("../fonts/OpenSans-Semibold-webfont.eot");
@@ -36,6 +40,7 @@
   font-style: normal;
   -webkit-font-smoothing: antialiased;
 }
+
 @font-face {
   font-family: 'OpenSansSemiboldItalic';
   src: url("../fonts/OpenSans-SemiboldItalic-webfont.eot");
@@ -44,6 +49,7 @@
   font-style: normal;
   -webkit-font-smoothing: antialiased;
 }
+
 @font-face {
   font-family: 'OpenSansBold';
   src: url("../fonts/OpenSans-Bold-webfont.eot");
@@ -52,6 +58,7 @@
   font-style: normal;
   -webkit-font-smoothing: antialiased;
 }
+
 @font-face {
   font-family: 'OpenSansBoldItalic';
   src: url("../fonts/OpenSans-BoldItalic-webfont.eot");
@@ -60,7 +67,24 @@
   font-style: normal;
   -webkit-font-smoothing: antialiased;
 }
-/*! normalize.css 2012-02-07T12:37 UTC - http://github.com/necolas/normalize.css */
+
+@font-face {
+  font-family: 'SteelfishRegular';
+  src: url("../fonts/Steelfish-Regular.ttf");
+  font-weight: normal;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+}
+
+@font-face {
+  font-family: 'SteelfishOutline';
+  src: url("../fonts/Steelfish-Outline.ttf");
+  font-weight: normal;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* normalize.css 2012-02-07T12:37 UTC - https://github.com/necolas/normalize.css */
 /* =============================================================================
    HTML5 display definitions
    ========================================================================== */
@@ -249,8 +273,8 @@ pre,
 code,
 kbd,
 samp {
-  font-family: WorkAroundWebKitAndMozilla, monospace;
-  _font-family: 'courier new', monospace;
+  font-family: monospace, serif;
+  font-family: 'courier new', monospace;
   font-size: 1em;
 }
 
@@ -342,6 +366,10 @@ img {
   /* 1 */
   -ms-interpolation-mode: bicubic;
   /* 2 */
+}
+
+.imgTight {
+  max-height: 250px; 
 }
 
 /*
@@ -520,105 +548,65 @@ table {
   border-spacing: 0;
 }
 
-* {
-  -webkit-box-sizing: border-box;
-  /* Safari/Chrome, other WebKit */
-  -moz-box-sizing: border-box;
-  /* Firefox, other Gecko */
-  box-sizing: border-box;
-  /* Opera/IE 8+ */
-}
-
-* {
-  box-sizing: border-box;
-}
-
 body {
-  padding-bottom: 20px;
+  padding: 0px 0 20px 0px;
   margin: 0px;
-  font: 14px/1.47 "OpenSansRegular", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  color: rgba(255, 255, 255, 0.7);
+  font: 14px/1.5 "OpenSansRegular", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: #f0e7d5;
   font-weight: normal;
   background: #252525;
   background-attachment: fixed !important;
-  background: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJvYmplY3RCb3VuZGluZ0JveCIgeDE9IjAuNSIgeTE9IjAuMCIgeDI9IjAuNSIgeTI9IjEuMCI+PHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzJhMmEyOSIvPjxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iIzFjMWMxYyIvPjwvbGluZWFyR3JhZGllbnQ+PC9kZWZzPjxyZWN0IHg9IjAiIHk9IjAiIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9InVybCgjZ3JhZCkiIC8+PC9zdmc+IA==');
-  background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #2a2a29), color-stop(100%, #1c1c1c));
-  background: -moz-linear-gradient(#2a2a29, #1c1c1c);
-  background: -webkit-linear-gradient(#2a2a29, #1c1c1c);
-  background: linear-gradient(#2a2a29, #1c1c1c);
 }
 
 h1, h2, h3, h4, h5, h6 {
-  color: #fff;
+  color: #e8e8e8;
+  margin: 0 0 10px;
+  font-family: 'OpenSansRegular', "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: normal;
 }
 
 p, ul, ol, table, pre, dl {
-  margin-bottom: 20px;
+  margin: 0 0 20px;
+}
+
+h1, h2, h3 {
+  line-height: 1.1;
 }
 
 h1 {
-  font-size: 2.5em;
+  font-size: 28px;
 }
 
 h2 {
-  font-size: 2em;
+  font-size: 24px;
+}
+
+h4, h5, h6 {
+  color: #e8e8e8;
 }
 
 h3 {
-  font-size: 1.75em;
-}
-
-h4 {
-  font-size: 1.5em;
-}
-
-h5 {
-  font-size: 1.25em;
-}
-
-h6 {
-  font-size: 1em;
-}
-
-p {
-  line-height: 1.7em;
+  font-size: 18px;
+  line-height: 24px;
+  font-family: 'OpenSansRegular', "Helvetica Neue", Helvetica, Arial, sans-serif !important;
+  font-weight: normal;
+  color: #b6b6b6;
 }
 
 a {
-  color: #FFC107;
+  color: #ffcc00;
   font-weight: 400;
   text-decoration: none;
-  border-bottom: 1px dotted;
-  transition: color 150ms ease;
 }
 a:hover {
-  color: #ffd454;
+  color: #ffeb9b;
 }
 
-.small {
-  font-size: 12px;
+a small {
+  font-size: 11px;
   color: #666;
   margin-top: -0.6em;
   display: block;
-}
-
-.btn {
-  font-size: 14px;
-  color: #fff;
-  background-color: #8bc34a;
-  border: 1px solid #92c755;
-  border-radius: 2px;
-  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
-  padding: 6px 12px;
-  display: inline-block;
-  text-align: center;
-  transition: all 150ms ease;
-}
-.btn:hover {
-  color: #fff;
-  border: 1px solid #84bf3f;
-  background-color: #7eb73d;
-  box-shadow: 0;
 }
 
 ul {
@@ -642,29 +630,40 @@ section img {
 }
 
 blockquote {
-  border-left: 3px solid #FFC107;
+  border-left: 3px solid #ffcc00;
   margin: 0;
   padding: 0 0 0 20px;
   font-style: italic;
 }
 
 code {
-  font-family: 'Lucida Sans', Monaco, Bitstream Vera Sans Mono, Lucida Console, Terminal;
+  font-family: "Lucida Sans", Monaco, Bitstream Vera Sans Mono, Lucida Console, Terminal;
   color: #efefef;
-  background: #191919;
-  font-size: 14px;
+  font-size: 13px;
   margin: 0 4px;
-  padding: 2px 8px;
+  padding: 4px 6px;
+  -moz-border-radius: 2px;
+  -webkit-border-radius: 2px;
+  -o-border-radius: 2px;
+  -ms-border-radius: 2px;
+  -khtml-border-radius: 2px;
   border-radius: 2px;
 }
 
 pre {
   padding: 8px 15px;
   background: #191919;
+  -moz-border-radius: 2px;
+  -webkit-border-radius: 2px;
+  -o-border-radius: 2px;
+  -ms-border-radius: 2px;
+  -khtml-border-radius: 2px;
   border-radius: 2px;
-  -moz-box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1);
-  -webkit-box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1);
-  box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1);
+  border: 1px solid #121212;
+  -moz-box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.3);
+  -webkit-box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.3);
+  -o-box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.3);
+  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.3);
   overflow: auto;
   overflow-y: hidden;
 }
@@ -709,50 +708,99 @@ dt {
   font-weight: normal;
 }
 
-.wrapper {
-  width: 100%;
-  max-width: 650px;
-  margin: 0 auto;
-}
-
 #header {
   z-index: 100;
-  position: fixed;
   left: 0;
   top: 0px;
+  height: 60px;
   width: 100%;
+  position: fixed;
   background: url(../images/nav-bg.gif) #353535;
   border-bottom: 4px solid #434343;
   -moz-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.25);
   -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.25);
+  -o-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.25);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.25);
-  padding: 10px 0;
-  overflow: hidden;
 }
-#header .nav {
+#header nav {
+  max-width: 650px;
+  margin: 0 auto;
+  padding: 0 10px;
+  margin: 6px auto;
+}
+#header nav li {
+  font-family: 'OpenSansLight', "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: normal;
+  list-style: none;
+  display: inline;
+  color: white;
+  line-height: 50px;
+  text-shadow: 0px 1px 0px rgba(0, 0, 0, 0.2);
+  font-size: 14px;
+}
+#header nav li a {
+  color: white;
+  border: 1px solid #640032;
+  background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #960032), color-stop(100%, #640032));
+  background: -webkit-linear-gradient(#960032, #640032);
+  background: -moz-linear-gradient(#960032, #640032);
+  background: -o-linear-gradient(#960032, #640032);
+  background: -ms-linear-gradient(#960032, #640032);
+  background: linear-gradient(#960032, #640032);
+  background-color: #960032;
+  -moz-border-radius: 2px;
+  -webkit-border-radius: 2px;
+  -o-border-radius: 2px;
+  -ms-border-radius: 2px;
+  -khtml-border-radius: 2px;
+  border-radius: 2px;
+  -moz-box-shadow: inset 0px 1px 0px rgba(255, 255, 255, 0.3), 0px 3px 7px rgba(0, 0, 0, 0.7);
+  -webkit-box-shadow: inset 0px 1px 0px rgba(255, 255, 255, 0.3), 0px 3px 7px rgba(0, 0, 0, 0.7);
+  -o-box-shadow: inset 0px 1px 0px rgba(255, 255, 255, 0.3), 0px 3px 7px rgba(0, 0, 0, 0.7);
+  box-shadow: inset 0px 1px 0px rgba(255, 255, 255, 0.3), 0px 3px 7px rgba(0, 0, 0, 0.7);
+  padding: 10px 12px;
+  margin-top: 6px;
+  line-height: 14px;
+  font-size: 14px;
+  display: inline-block;
+  text-align: center;
+}
+#header nav li a:hover {
+  background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #c80046), color-stop(100%, #960046));
+  background: -webkit-linear-gradient(#c80046, #960046);
+  background: -moz-linear-gradient(#c80046, #960046);
+  background: -o-linear-gradient(#c80046, #960046);
+  background: -ms-linear-gradient(#c80046, #960046);
+  background: linear-gradient(#c80046, #960046);
+  background-color: #c80046;
+  border: 1px solid #960046;
+  -moz-box-shadow: inset 0px 1px 1px rgba(0, 0, 0, 0.2), 0px 1px 0px rgba(0, 0, 0, 0);
+  -webkit-box-shadow: inset 0px 1px 1px rgba(0, 0, 0, 0.2), 0px 1px 0px rgba(0, 0, 0, 0);
+  -o-box-shadow: inset 0px 1px 1px rgba(0, 0, 0, 0.2), 0px 1px 0px rgba(0, 0, 0, 0);
+  box-shadow: inset 0px 1px 1px rgba(0, 0, 0, 0.2), 0px 1px 0px rgba(0, 0, 0, 0);
+}
+
+
+#header nav li.fork {
+  float: left;
+  margin-left: 0px;
+  margin-right: 4px;
+}
+#header nav li.downloads {
   float: right;
-  padding: 0;
-  margin: 0;
+  margin-left: 6px;
 }
-#header .nav .download-title {
-  display: inline-block;
-  line-height: 36px;
-  font-size: 12px;
-  text-transform: uppercase;
-  color: rgba(255, 255, 255, 0.6);
-  margin-right: 15px;
-}
-#header .nav li {
-  display: inline-block;
+#header nav li.title {
+  float: right;
+  margin-right: 10px;
+  font-size: 11px;
 }
 
 section {
+  max-width: 650px;
   padding: 30px 0px 50px 0px;
   margin: 20px 0;
   margin-top: 70px;
-}
-section ul li {
-  line-height: 2.4em;
 }
 section #title {
   border: 0;
@@ -761,22 +809,25 @@ section #title {
   padding: 0 0 5px 0;
 }
 section #title h1 {
+  font-family: 'OpenSansLight', "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: normal;
+  font-size: 40px;
   text-align: center;
-  line-height: 1em;
-  padding-bottom: 0;
-  margin-bottom: 0;
+  line-height: 36px;
 }
-section #title h5 {
-  color: rgba(255, 255, 255, 0.6);
+section #title p {
+  color: #d7cfbe;
+  font-family: 'OpenSansLight', "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: normal;
+  font-size: 18px;
   text-align: center;
-  font-weight: 100;
-  margin-top: 10px;
-  margin-bottom: 40px;
 }
 section #title .credits {
-  font-size: 12px;
-  color: rgba(255, 255, 255, 0.5);
-  margin-top: 0px;
+  font-size: 11px;
+  font-family: 'OpenSansRegular', "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: normal;
+  color: #696969;
+  margin-top: -10px;
 }
 section #title .credits.left {
   float: left;
@@ -802,17 +853,20 @@ section #title .credits.right {
   }
 }
 @media print, screen and (max-width: 480px) {
-  #header .wrapper {
-    padding: 0 10px;
-    max-width: none;
+  #header {
+    margin-top: -20px;
   }
 
-  .btn {
-    padding: 10px;
-    width: 100%;
+  section {
+    margin-top: 40px;
   }
 
-  .nav {
+  nav {
     display: none;
   }
+}
+
+.Number {
+  font-family: 'SteelfishRegular' !important;
+  font-size: 28px;
 }
